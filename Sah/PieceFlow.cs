@@ -5,14 +5,14 @@ using System.Text;
 
 namespace CalculatorWithCommand
 {
-    class CalculatorFlow
+    class PieceFlow
     {
         private readonly Piece _piece;
         private PieceCommand _lastCommand;
 
         private readonly List<PieceCommand> _commandHistory = new List<PieceCommand>();
 
-        public CalculatorFlow(Piece piece)
+        public PieceFlow(Piece piece)
         {
             _piece = piece;
         }
