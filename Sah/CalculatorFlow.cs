@@ -12,9 +12,9 @@ namespace CalculatorWithCommand
 
         private readonly List<PieceCommand> _commandHistory = new List<PieceCommand>();
 
-        public CalculatorFlow(Piece calculator)
+        public CalculatorFlow(Piece piece)
         {
-            _piece = calculator;
+            _piece = piece;
         }
 
         public void ExecuteOperation(Operation operation)

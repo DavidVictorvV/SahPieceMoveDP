@@ -16,6 +16,11 @@ namespace CalculatorWithCommand
         public void Calculate(Operation operation)
         {
             int letterPos = _letterList.IndexOf(_position[1].ToString());
+            if(letterPos == -1)
+            {
+                _position = _position[0] + _letterList[0];
+                letterPos = 0;
+            }
             if(_position[0] - '0' != 8) { 
             switch (operation)
             {

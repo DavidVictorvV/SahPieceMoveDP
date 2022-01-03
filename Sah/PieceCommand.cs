@@ -9,9 +9,9 @@ namespace CalculatorWithCommand
         private Operation _operation;
         private Piece _piece;
 
-        public PieceCommand(Piece calculator, Operation operation)
+        public PieceCommand(Piece piece, Operation operation)
         {
-            _piece = calculator;
+            _piece = piece;
             _operation = operation;
         }
 
